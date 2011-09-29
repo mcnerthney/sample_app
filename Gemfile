@@ -7,6 +7,8 @@ gem 'rails', '3.1.0'
 
 gem 'sqlite3'
 
+gem 'heroku'
+
 group :development do
   gem 'rspec-rails'
 end
@@ -14,6 +16,11 @@ end
 group :test do
  gem 'rspec'
  gem 'webrat', ">= 0.7.2.beta.1"
+end
+
+group :production do
+  gem 'therubyracer-heroku', '0.8.1.pre3' # you will need this too
+  gem 'pg'
 end
 
 # Gems used only for assets and not required
