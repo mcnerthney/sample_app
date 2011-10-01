@@ -8,5 +8,6 @@ doc/api
 doc/app
 *.swp
 *~
+railties/
 .sass-cache/
 .DS_Store
